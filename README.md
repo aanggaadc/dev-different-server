@@ -22,8 +22,8 @@ This is a simple API for uploading and retrieving images using **Node.js**, **Ex
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-repo/image-upload-api.git
-cd image-upload-api
+git clone https://github.com/aanggaadc/dev-different-server.git
+cd dev-different-server
 ```
 
 ### 2. Install Dependencies
