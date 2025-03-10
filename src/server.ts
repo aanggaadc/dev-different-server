@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import dbConnect from "./config/db";
 import uploadRoutes from "@/routes/upload";
 import retrieveRoutes from "@/routes/retrieve";
@@ -18,6 +19,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 dbConnect();
+
+app.use(
+  cors({
+    origin: "http://localhost:4200",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
+  })
+);
 
 app.use(express.json());
 app.use("/upload", uploadRoutes);
