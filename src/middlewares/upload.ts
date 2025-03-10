@@ -22,6 +22,4 @@ const fileFilter = (
   }
 };
 
-const upload = multer({ storage, fileFilter });
-
-export default upload;
+export const upload = multer({ storage, fileFilter });
