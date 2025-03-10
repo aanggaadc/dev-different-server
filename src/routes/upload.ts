@@ -18,13 +18,13 @@ router.post(
     try {
       const newImage = new Image({
         filename: req.file.filename,
-        path: req.file.path,
+        path: `uploads/${req.file.filename}`,
         size: req.file.size,
         mimetype: req.file.mimetype,
       });
 
       await newImage.save();
-      res.json({ message: "Image uploaded successfully", image: newImage });
+      res.json({ message: "Image uploaded successfully", data: newImage });
     } catch (error) {
       res.status(500).json({ message: "Error saving image metadata", error });
     }
