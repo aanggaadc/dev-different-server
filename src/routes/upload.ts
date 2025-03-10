@@ -1,7 +1,8 @@
 import express, { Request, Response } from "express";
-import upload from "@/middlewares/upload";
 
-import Image from "@/models/Image";
+import { upload } from "@/middlewares";
+
+import { Image } from "@/models";
 
 const router = express.Router();
 
