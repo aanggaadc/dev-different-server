@@ -3,8 +3,8 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import dbConnect from "./config/db";
-import uploadRoutes from "./routes/upload";
-import retrieveRoutes from "./routes/retrieve";
+import uploadRoutes from "@/routes/upload";
+import retrieveRoutes from "@/routes/retrieve";
 
 const uploadDir = path.join(__dirname, "../uploads");
 
