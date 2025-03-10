@@ -8,4 +8,4 @@ const ImageSchema = new mongoose.Schema({
   mimetype: { type: String, required: true },
 });
 
-export default mongoose.model("Image", ImageSchema);
+export const Image = mongoose.model("Image", ImageSchema);
