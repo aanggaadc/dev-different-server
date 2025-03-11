@@ -83,15 +83,6 @@ The API will be available at `http://localhost:5000/`.
 - **Response:**
 The image file is returned as a response.
 
-### 4. Delete an Image
-- **Endpoint:** `DELETE /images/:id`
-- **Response:**
-```json
-{
-  "message": "Image deleted successfully"
-}
-```
-
 ## Database Schema (MongoDB)
 ```js
 const ImageSchema = new mongoose.Schema({
